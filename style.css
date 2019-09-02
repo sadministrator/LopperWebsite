@@ -1,5 +1,5 @@
-html {
-  font-family: sans-serif;
+* {
+  font-family: "M PLUS 1p", sans-serif;
 }
 
 body {
@@ -45,16 +45,17 @@ body {
 }
 
 .Address {
-  gird-area: address;
+  grid-area: address;
   background: #E5E5E5;
 }
 
 .Address h3 {
-
+  display: block;
+  left: 147px;
+  position: static;
 }
 
 .Container {
-  display: flex;
   display: block;
 }
 
@@ -64,6 +65,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .Container p {
   display: block;
 }
@@ -99,6 +101,7 @@ body {
   background: #150433;
   display: block;
   margin: 0 auto;
+  color: white;
 }
 
 nav {

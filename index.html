@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv+"X-UA-Compatible" content="ie=edge">
-  <title>hw2</title>
+  <title>Lopper</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p">
 </head>
@@ -27,29 +27,30 @@
     </div>
 
     <div class="Address">
-      <h3>We build great business</h3>
-
       <div class="Outer">
-      <div class="Container">
-        <img src="images/geoPin.png" alt="Geolocation pin">
-        <div class="Inner">
+        <div class="Container">
+
+          <h3>We build great</h3>
+          <h3>business</h3>
+          <br>
+
+          <img src="images/geoPin.png" alt="Geolocation pin">
           <h4>OUR OFFICE</h4>
           <p>91 E. Lexington Street</p>
           <p>Apt 688</p>
           <p>Gibsonia, PA 15044</p>
         </div>
-      </div>
 
-      <div class="Container">
-        <img src="images/emailIcon.png" alt="email icon">
-        <h4>CONTACT@LOP.COM</h4>
-      </div>
+        <div class="Container">
+          <img src="images/emailIcon.png" alt="email icon">
+          <h4>CONTACT@LOP.COM</h4>
+        </div>
 
-      <div class="Container">
-        <img src="images/phoneIconRed.png" alt="phone icon">
-        <h4>(01) 666 - 693 - 456</h4>
+        <div class="Container">
+          <img src="images/phoneIconRed.png" alt="phone icon">
+          <h4>(01) 666 - 693 - 456</h4>
+        </div>
       </div>
-    </div>
     </div>
 
     <div class="Photo">
@@ -64,7 +65,28 @@
     </div>
 
     <div class="Form">
-      <p>FORM</p>
+      <h3>Get in touch with us</h3>
+
+      <form action="/formInfo" method="post">
+        <div class="NameField">
+          <label for="name">YOUR NAME</label>
+          <input type="text" id="name" name="user_name" value="Your name">
+        </div>
+
+        <div class="EmailField">
+          <label for="email">YOUR EMAIL</label>
+          <input type="email" id="email" name="user_email" value="Your email">
+        </div>
+
+        <div class="MessageField">
+          <label for="message">YOUR MESSAGE</label>
+          <textarea id="message" name="user_message">Your message</textarea>
+
+          <div class="button">
+            <button type="submit">Send</button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </body>
