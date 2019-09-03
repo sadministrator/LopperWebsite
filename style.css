@@ -37,7 +37,7 @@ body {
 
 }
 
-.nav {
+.Nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -46,13 +46,28 @@ body {
   height: 5.79%;
 }
 
-.nav a {
+.Nav a {
   color: black;
   padding: 60px;
 }
 
-.nav a:hover, img:hover {
+.Nav a:hover {
   background: grey;
+}
+
+.Nav a:active {
+  background: lightGrey;
+  transform: scale(.99);
+}
+
+.Nav.Logo a:hover {
+  background: none;
+}
+
+.NavPhone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .Banner {
@@ -67,11 +82,44 @@ body {
   background: #E5E5E5;
 }
 
+.AddressInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.AddressPin {
+  position: absolute;
+  left: -63px;
+  top: 145px;
+}
+
+.AddressEmail {
+  position: absolute;
+  left: -60px;
+  top: 365px;
+}
+
+.AddressPhone {
+  position: absolute;
+  left: -58px;
+  top: 425px;
+}
+
+.ImgContainer {
+  position: absolute;
+  left: 0;
+  top: 26%;
+}
+
 .Container {
 
 }
 
 .Outer {
+  position: absolute;
+  top: 630px;
+  left: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,6 +140,55 @@ body {
 .Footer {
   grid-area: footer;
   background: #30124E;
+  color: white;
+}
+
+.FooterContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 200px;
+  right: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.FooterInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.FooterBundle {
+  display: inline;
+}
+
+.FooterSocial {
+  display: flex;
+  justify-content: space-between;
+  width: 200%;
+}
+
+.Footer small {
+  position: absolute;
+  bottom: 50px;
+  left: 31%;
+}
+
+.Footer a {
+  color: white;
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}
+
+.Footer img:hover {
+  transform: scale(1.01);
+}
+
+.Footer hr {
+  color: #F61067;
 }
 
 .BG {
@@ -107,21 +204,67 @@ body {
   height: 28.99%;
   width: 79.58%;
   background: #150433;
-  display: block;
   margin: 0 auto;
   color: white;
 }
+.Form h3 {
+  display: block;
+  padding-left: 11%;
+  padding-top: 8%;
+}
 
-label, input {
+.InnerForm {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Form input {
+  display: block;
+  width: 362px;
+  height: 54px;
+}
+
+.Form label {
   display: block;
 }
 
-.LeftForm {
+.Form textarea {
+  width: 558px;
+  height: 234px;
+}
 
+.LeftForm {
+  display: inline-block;
+  margin: 1%;
 }
 
 .RightForm {
-  float: right;
+  display: inline-block;
+  margin: 1%;
+}
+
+.Form input, textarea {
+  color: Grey;
+}
+
+.Form button {
+  position: absolute;
+  bottom: 130px;
+  width: 215px;
+  height: 54px;
+  background: #F61067;
+  color: white;
+  border-radius: 25px;
+
+}
+
+.Form button:hover {
+  background: #FA54AB;
+}
+
+button:active {
+  transform: scale(0.99);
 }
 
 a {
