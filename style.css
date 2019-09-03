@@ -112,8 +112,16 @@ body {
   color: white;
 }
 
-nav {
+label, input {
+  display: block;
+}
 
+.LeftForm {
+
+}
+
+.RightForm {
+  float: right;
 }
 
 a {
